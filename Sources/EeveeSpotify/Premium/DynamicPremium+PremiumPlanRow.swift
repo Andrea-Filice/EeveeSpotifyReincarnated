@@ -4,7 +4,7 @@ func getPremiumPlanBadge() throws -> Data {
     let badge = YourPremiumBadge.with {
         $0.name = "Eevee"
         $0.version = 2
-        $0.colorCode = "#FFD2D7"
+        $0.colorCode = "#ef102a"
     }
     
     return try badge.serializedData()
@@ -15,7 +15,7 @@ func getPremiumPlanRowData(originalPremiumPlanRow: PremiumPlanRow) throws -> Dat
     
     premiumPlanRow.planName = "EeveeSpotify"
     premiumPlanRow.planIdentifier = "Eevee"
-    premiumPlanRow.colorCode = "#FFD2D7"
+    premiumPlanRow.colorCode = "#ef102a"
     
     return try premiumPlanRow.serializedData()
 }
@@ -30,7 +30,7 @@ func getPlanOverviewData() throws -> Data {
             $0.planVariant = 2
             $0.planName = "EeveeSpotify"
             $0.planCategory = "Eevee"
-            $0.colorCode = "#FFD2D7"
+            $0.colorCode = "#ef102a"
             $0.features = [
                 SpotifyPlan.Feature.with {
                     $0.color = "#1ED760"
